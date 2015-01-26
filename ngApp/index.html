@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app ="app0">
 	<head>
 		<meta charset ="UTF-8">
 		<title>chin tiki</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  		<!--link rel="stylesheet" href="css/app.css" -->
+  		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+
 	</head>
 
-	<body ng-app="ngApp">
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-route/angular-route.min.js"></script>
-	<script src="scripts/angular/app.js"></script>
-	<script src="scripts/angular/controllers.js"></script>
+	<body>
+		<div ng-view>
+			<script src="scripts/angular/app.js"></script>
+			<script src="scripts/angular/controllers.js"></script>
+			<!-- <p>Nothing here {{'yet' + '!'}}</p> -->
+		</div>
 	</body>
 </html>

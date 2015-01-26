@@ -1,5 +1,8 @@
 'use strict';
 
-function WelcomeCtrl($scope){
-    $scope.username = 'KfreeZ';
-}
+var myCtrlr = angular.module('myCtrlr', []);
+
+myCtrlr.controller('WelcomeCtrl', ['$scope',
+    function ($scope){
+        $scope.username = 'KfreeZ';
+    }]);

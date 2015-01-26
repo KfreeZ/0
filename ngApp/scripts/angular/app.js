@@ -1,10 +1,15 @@
 'use strict'
 
-var app = angular.module('app', ['ngRoute']);
+var app0 = angular.module('app0', ['ngRoute',
+    'myCtrlr']);
 
-app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-    $routeProvider
-        .when('/', {templateUrl: '/views/tpl/welcome.html', controller: 'WelcomeCtrl'})
-        .otherwise({redirectTo: '/'});
-    $locationProvider.html5Mode(true);
+app0.config(['$routeProvider',
+     function($routeProvider) {
+        $routeProvider.
+        when('/1', {
+            templateUrl: 'views/tpl/welcome.html',
+            controller: 'WelcomeCtrl'}).
+        otherwise({
+            redirectTo: '/1'
+        });
 }]);
